@@ -10,8 +10,8 @@ signInUtil = async (wsEndpoint, page_index) => {
         const pages = await browser.pages();
         const page = pages[page_index];
 
-        const json_path = path.join(__dirname, 'otp.json',);
-        const key = 'otp';
+        const json_path = path.join(__dirname, 'creds.json',);
+        const key = 'username';
 
         json_read = readJsonFile(json_path);
         const id = json_read[key];
